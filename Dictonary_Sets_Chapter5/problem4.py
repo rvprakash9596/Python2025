@@ -22,6 +22,5 @@ print(type(1))          # <class 'int'>
 print(type(1.0))        # <class 'float'>
 print(1 is 1.0)         # False (different objects & types)
 
-
 set1={20,20.0,"20"}
 print(len(set1))
