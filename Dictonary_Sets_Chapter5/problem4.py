@@ -16,7 +16,6 @@ print("The length of this set = ",len(s)) # The length of this set =  2
 chk=1==1.0
 print(chk) # yes True
 
-
 print(1 == 1.0)         # True (values equal)
 print(type(1))          # <class 'int'>
 print(type(1.0))        # <class 'float'>
