@@ -23,12 +23,3 @@ print(marks,type(marks))
 print(marks["Ravi"])
 print(marks[1])
 
-
-
-
-
-
-
-
-
-

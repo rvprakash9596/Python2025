@@ -15,7 +15,7 @@ print(marks,type(marks))
 
 # print(marks.values())
 
-# print(marks.update({"Ravi":57,"101":["Dugggggguuuu"]}))
+# print(marks.update({"Ravi":57,"101":["Dugggggguuuu"]})) # add and updates value in dictonary
 
 # print(marks)
 
@@ -31,14 +31,8 @@ print(marks)
 print(marks.popitem()) # retuens last key and value & removes last key:value
 print(marks)
 
-
-
 # print(marks.clear())
 # print(marks)
-
-
-
-
 
 
 # Duplicate element "A" not allowed by Dictonary
