@@ -12,7 +12,6 @@ s.add('45')
 print(s)
 print("The length of this set = ",len(s)) # The length of this set =  2
 
-
 chk=1==1.0
 print(chk) # yes True
 
