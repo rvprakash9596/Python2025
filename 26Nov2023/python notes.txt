@@ -1,0 +1,701 @@
+25/11/2022
+To check that python is installed successfully or not 
+-----------------------------------------------------
+Python --version
+
+=> to go from one directory to another directory we use CD.. command 
+=> to go into a directory we use D: 
+=> cd ravi 
+
+print(): Print() is used to display output on command prompt.
+
+Identifier:====> Any name in python programming is known as identifier . it can be variable name , function name , class name and module name .
+======================================
+Rules to define identifier in python : 
+======================================
+1. allowed character to define identifier in Python
+
+(a) a-z and A-Z
+(b) digit (0-9)
+(c) _ (underscore)
+
+2. Identifier can't start with number
+as: 112ravi invalid
+	112222 invalid
+	ravi123 valid
+	Ravi45 valid
+
+3. Identifiers are case-sensitive.
+x=10
+X="RAM"
+print(x)//10
+print(X)//RAM
+
+def for():
+	statement
+
+Total=10
+total=30
+Total==total
+
+Ex.for,if,def,elif
+
+4. we can't define keyword as a identifier in python.
+
+----------------
+python keywords:
+----------------
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+5. If identifier starts with underscore symbol(_) then it treated like private identifier.
+as: _name(private variable)
+	name(public variable)
+	
+	def _demo():
+	statement==> Private Identifier
+================================================================================
+home work
+name = yes
+nam@e = not
+Total = yes
+T@tal = not
+232ssfdsgdfg = not
+date#dgshdghd = not
+namefor = yes
+for = not
+nameTrue = yes
+True = no
+False = no
+false = yes
+None = no
+NONE = yes
+fbfere433sdfdf = not
+@fdgg34agshgsh = no
+dsfs_gddgshgh = yes
+_sdcfggf = yes
+__dd = yes
+Ravi = yes
+Ravi123 = yes
+--------------------------------------------------------------------------------
+
+================
+Variable ======> Variable is a value container to store data value.
+================
+
+num1=10
+num2=30
+res=num1+num2
+print("res")
+--------------
+
+String :==>  String is a collection of character enclosed with single or double quotes.
+
+as: "sar"
+"RAM"
+'10'=>string
+"230.ravi"=> string
+
+Task 1 =>>
+name="Ravi Prakash"
+college="Bansal Institute Of Engineering And Technology - Lucknow"
+branch="Computer Science And Engineering"
+year="2nd "
+age="20"
+mob="9839029547"
+company="Google India Limited"
+
+'''print("My Name is :",name +"\n" + "My College name is :",college +"\n"+ "Branch :",branch +"\n"+ "Year :",year +"\n"+ "Age :",age +"\n"+ "Contact Number Is : ",mob)'''
+
+#print("Name : ",name,"College : ",college , "\nBranch :",branch,"Year :",year)
+
+print("My company name is :",company)
+print("#\t"*20)
+print("College :",college)
+print("Branch :",branch)
+
+==========
+26/11/2022
+==========
+Python Version 3 = 35 Keywords
+Python Version 2 = 33 Keywords
+
+-------------------------------
+Keywords / Reserve Words : ==>>
+-------------------------------
+In Python some word are reserved for special meaning and functionality . That words are known as Keywords/reserve word .
+
+----------------------------------
+To import keword list program :==>
+----------------------------------
+import keyword
+print(keyword.kwlist)
+----------------------------------
+
+a=10
+a=10.52
+a=True
+a="RAVI"
+
+-----------
+Data Types :==>Data Types is used to represent type of data present in variable.
+-----------
+1. Fundamenta Data Type:
+(a) int=> int data type is used to represent integer type value.
+as: 
+a=10
+b=12350
+c=458
+
+type()=> type () is used to check  type of data present in variable. 
+
+float(120.201)==> float data type is used to represent floating type(decimal value as: 102.201) value.
+a=20.307
+a=50.001
+str
+bool
+2. Advance Data Type
+list
+tuple
+set
+dict
+range
+
+==========
+string:==> String is a sequence of characher enclosed with single or double quotes.
+==========
+as: 
+a='Ravi'  
+b="Ravi" 
+c="10254" 
+
+==================
+Boolean Value :==> to represent boolean type value (True,False) True(1) , False(0)
+==================
+
+x=True
+print(type(x))
+y=False
+print(type(y))
+z=true
+print(type(z))
+
+===========
+input() :==> input() function is used to take input by user on the command prompt .
+===========
+==>> return type of input function string.
+
+syntax:
+-------
+variable=input("Message")
+
+Example:
+--------
+
+name=input("Enter Your Name : ")
+print("NAME is:" , name)
+
+
+min=25 field
+
+sample output:
+
+NAME: RAVI PRAKASH
+==================
+Mobile : 545454545
+==================
+City : sghgdsghdgd
+==================
+
+name
+fathername
+mothername
+qualification
+course
+branch
+year
+semester
+section
+hodname
+totallecture
+friendname
+totalsubjects
+
+=================
+Dated:28 Nov 2022 ===>>>
+=================
+
+Type Conversion / Type Casting ==> The process of converting one data type value to another data type is known as type casting or type conversion .
+1.int() => int() is used to convert one data type value to integer data type .
+2. float() => to convert float data type 
+3. str() => to convert str datatype
+4. bool() => to convert boolean type value.
+
+int()
+=====
+print(int("Ravi Prakash"))#error
+print(int(10.5)) #10
+print(int(True)) #1 bcz true=1
+print(int(false)) #error
+print(int(true)) #error
+print(int(true)) #error
+print(int("10.20")) #error
+
+
+float()
+=======
+print(float(10)) #10.0
+print(float("Ravi")) #error
+print(float(true)) #error
+print(float(True)) #1.0
+print(float(False)) #0.0
+
+str()
+====
+a=10
+print(type(a))#int class
+a1=10
+print(str(a))
+print(type(a1))#str
+b=1.025
+b=str(b)
+c=True
+c=str(c)
+print(type(c))
+d=False
+d=str(d)
+print(type(d)) #str
+
+bool()
+======
+
+print(bool(0))#false
+print(bool(1))#true
+print(bool(0.0))#false
+print(bool(1.0))#true
+print(bool(10))#true
+print(bool("Ravi"))#true
+print(bool(""))#false
+
+
+=======
+String slicing :==>> 
+=======
+Forword slicing = 0----------n-1
+Backword slicing = -1 -------- 
+
+name="RaviPrakash"
+print(name[5]) #forowrd slicing =r
+print(name[-5]) #backword slicing =a
+
+name1="Ravi Prakash"
+print(name1[5]) #forowrd slicing =p
+print(name1[-5]) #backword slicing =a
+print(name1[5]) #forowrd slicing =p
+print(name1[-5]) #backword slicing
+print(name1[0:6]) # RaviPr
+print(name1[3:6]) # RaviPr
+print(name1[:6]) # Ravi P
+print(name1[-3:-6]) # 
+print(name1[1:]) # avi prakash
+print(name1[:]) # Ravi Prakash
+print(name1[3:30]) #i Prakash
+
+===========
+29/Nov/2022
+===========
+
+
+Operator : ==> Operator is a symbol to perform operation over the operands .
+
+x=10
+y=30
+res = x + y	=,+ are operator
+
+here x and y are operands and + is operator
+Types of Operator : ==>
+1.	Arithmetic Operator
+2.	Relational Operator || Comparison Operator
+3.	Assignment Operator
+4.	Equality Operator
+5.	Logical Operator
+6.	Membership Operator
+7.	Turnary Operator || Conditional Operator
+===========================================
+
+1.	Arithmetic Operator :=> 
+
++
+-
+*
+/  division 
+// floor division
+%
+** exponant
+
+X=20
+Y=10
+Print(x+Y)
+
+# Examples of python Operator's
+
+x=20
+y=10
+z=3
+
+
+
+print(x+y) #30
+print(x-y) #10
+print(x*y) #200
+print(x%y) #0
+print(x/y) #2.0
+print(x/z) #6.666666666667
+print(x//y)#2
+print(x//z)#6
+
+
+a=20.0
+b=3
+print(a/b) #6.666666666666667
+print(a//b)#6.0
+print(a//b)#6.0
+
+c=20.0
+d=6.0
+print(c/d)  #3.3333333333333335
+print(c//d) #3.0 bcz both operands are decimal
+
+e=10
+f=3
+print(e/f)# 3.3333
+print(e//f)# 3
+
+
+g=5
+h=3
+print(g*h) #15
+print(g**h) #125 (5*5*5)
+
+
+i="Ravi"
+j="Prakash"
+print(i**j) # this is invalid bcz exponent works only on numerical values 
+
+
+'''1000.544 => floor=>1000   ceil=>1001
+x=12.444  => 10
+123.94444 => floor 123'''
+
+
+
+Exponent Operator :==>
+3*2=6
+3**2=6
+3**2=3*3=9
+3**3=3*3*3=27
+
+
+Data : 30/Nov/2022
+Relational Operator / Comparison Operator :==> 
+>
+<
+<=
+>=
+x=10
+y=20
+print(x>y) #False
+print(10>50) #False
+print(2=>3) #False
+print(50>40) #True
+print(50>=40) #True
+print(50<40) #False
+print(50<=40) #False
+print(50<=50) #True
+
+
+Equality Operator :==> 
+==
+!=
+print(10==40)#false
+print(10==10)#True
+print(10!=10)#false
+
+Logical Operator :==>
+
+and => it returns true if both argument are True otherwise it returns False
+or
+not
+
+10>10 and 30>40 #False
+10>20 and 20>50 #True
+True and True #True
+True and False #False
+False and false #False
+False and False # True
+False and True #False
+
+or ==> It returns True if at least one argument is True otherwise it returns False .
+
+print(True or True) #True
+print(True or False) #True
+print(False or False) # False
+print(False or True) #True
+print(False or False) #False
+
+
+not :==> for complement
+# print(not True) #False
+# print(not False) #True
+# print(not False) #True
+
+
+
+Membership Operator :===> It returns True if given object present in given collection otherwise it returns False .
+
+(1) in :==>It returns True if given object present in given collection otherwise it returns False .
+(2) not in :==>
+
+
+name="Ravi Prakash KLD"
+
+print("KLD" in name) #True
+print("KLD." in name) #False
+print("ravi." in name) #False
+print("ravi" in name) #False
+
+
+name1="Techpile Technology Pvt. Ltd."
+print("ECH" not in name1)#True
+print("Technology" not in name1)#False
+
+
+
+=================
+Data: 01/Dec/2022
+=================
+
+
+=======
+Syntax:
+=======
+
+if(condition):				#indent means space
+	statement1
+	statement2
+	statement3
+	statement4
+else:
+	statement5
+	statement6
+	
+================================================================
+print("*"*50)
+
+x="Techpile Technology Pvt Ltd"
+
+a=input("Enter your message to find in collection : ")
+
+if(a in x):
+    print("Searches item is present in given collection .....")
+else:
+    print("Searches item is not present in given collection.....")
+=================================================================
+
+#login Authentication Program
+
+userid="raviprakash4344"
+password="Ravi@12345"
+print("*********Login Here**********")
+print("="*50)
+uid=input(("Please enter your userid : "))#ram
+pwd=input(("Please enter your password : "))#123
+if(uid==userid and pwd==password):
+    print("")
+    print("*"*30)
+    print("You Are Login Successfully . ")
+    print("*"*30)
+else:
+    #if(userid!=uid)
+    print("Wrong Userid or Password . ")
+    print("*"*30)
+	
+	
+======================
+  Date : 02/Dec/2022
+======================
+Assignment Operator :==> Assignment operator is used to store variable's value.
+=
++=
+*=
+/=
+%=
+//=
+**=
+	
+x=20
+y=10
+x+=2 	#x=x+2		x=20+2=22
+x+=y	#x=x+y		x=x+y=20+10=30
+x-=5	#x=x-5		x=x-5=20-5=15
+x-=y 	#x=x-y		x=20-10=10
+x*=50 	#x=x*50		x=20*50
+x*=y 	#x=x*y		x=20*50
+x/=y 	#x=x/100
+x/=y	#x=200/100=2.0
+x//y 	#x=x//y = 200//10.0 =20.0
+
+a=200.0
+b=3
+a//=b #a=a//b a=a/b 
+print(a)
+
+
+==================
+Ternary Operator:=
+==================
+syntax
+======
+first value if condition else second value.
+
+if condition is true then first value will be considered otherwise second value will be considered.
+
+Example:
+x=20
+y=30
+
+print("Y IS BIG") if (y>x) else print("X is big")
+
+
+#Ternary Operator
+x=20
+y=30
+
+print("Y IS BIG") if (y>x) else print("X is big")
+print("Y IS BIG") if (y<x) else print("X IS LESS")
+
+print(x," IS LESS") if (x<y) else print("X IS BIG")
+
+============
+Flow Control :==> Flow Controls define order in which statement will be executed.
+============
+1. Conditional Statement
+(a) if
+(b) if-elif
+(c) if-elif-else
+
+2. Iterative Statement/Looping Statement
+(a) for loop
+(b) while loop
+
+3. Transfer Control
+(a) break
+(b) continue
+
+=============================
+1. Conditional Statement :==>
+=============================
+(a). if statement:===>
+Syntax -:
+
+if(condition):
+	statement
+	statement
+	statement
+	
+===========
+06 Dec 2022
+===========
+
+============================================
+2. Iterative Statement/Looping Statement :=>
+============================================
+=> Looping statement is used to execute a group of statement multiple times at runtime .
+
+Types of iterative statement in Python :==>
+===========================================
+1. for loop
+2. while loop
+
+1. for() => if we want to execute a group of statement for every element present in collection (string,range,list,set,tuple etc.) then we have to use for loop .
+
+example :
+========
+for (initialization ; condition ; updation)
+{
+statement
+}
+====================
+name="RaviPrakash"
+for x in collection:
+	statement1
+	statement2
+	statement3
+
+collection=string,range,list,set,tuple etc.
+collection="RAM"
+
+
+syntax:
+=======
+for variable_name in collection:
+
+
+Example =
+=========
+
+#x="TECHPILE TECHNOLOGY"
+#for i in x:
+	#print("RAM") #RAM RAM RAM RAM RAM RAM RAM RAM
+    #print(i) 
+    #print(x,end="\t") #T       E       C       H       P       I       L       E
+    # print(i,end="\t")
+    # print(i,end=" ")
+    #print(i,end="||")
+    #print(i,end="\n")
+
+print("Ravi","Prakash","Ritik","Akshay",end="-")
+print("Ravi","Prakash","Ritik","Akshay",sep="-")
+print("Ravi","Prakash","Ritik","Akshay",sep="*")
+print("Ravi","Prakash","Ritik","Akshay",sep="$")
+print("Ravi","Prakash","Ritik","Akshay",sep="||")
+
+
+
+
+range() ==> range data type is used to generate sequence/collection of number .
+
+
+form1
+=====
+range(n) => it generate a sequence of number from 0 to n-1 .
+
+example:
+========
+range(5) =>0 to 4 (0,1,2,3,4)
+=============================
+x=range(10) #0,1,2,3,4,5,6,7,8,9
+for i in x:
+    print(i)
+    print(i,end="||")
+	
+	
+form 2
+======
+range(m,n)=> it generate sequence of number from m to n-1.
+range(10,15)
+collectionName
+
+example:==>
+===========
+for i in range(10,20):
+    print(i,end="\t")
+
+
+
+
+
+
+
+
+
+
