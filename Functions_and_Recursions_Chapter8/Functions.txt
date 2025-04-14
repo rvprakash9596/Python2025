@@ -1,0 +1,45 @@
+# Function : A function is a reusable block of code that performs a specific task. Instead of writing the same code again and again, you can define a function once and use it whenever needed.
+
+#  Why Use Functions?
+#Modularity: Break a big problem into smaller parts.
+#Reusability: Use the same function multiple times.
+#Readability: Makes code cleaner and easier to understand.
+#Debugging: Easier to test and fix small parts.
+
+# def function_name(parameters):
+    # code block
+    #return result
+
+# Types of function
+# 1. Built-in Function , Ex Examples: print(), len(), type(), int(), input(), sum(), max()
+# 2. User-Defined Fundtion : Created by the programmer using 'def' keyword.
+
+# Parameters vs Arguments
+# Parameter: Variable in the function definition.
+# Argument: Actual value passed to the function when calling it.
+
+
+
+Types of Arguments
+Positional Arguments: Based on position.
+Keyword Arguments: Passed using name=value.
+Default Arguments: Value assigned in function definition.
+Variable-length Arguments:
+
+*args for multiple positional arguments (tuple).
+
+**kwargs for multiple keyword arguments (dictionary).
+
+
+def student(name, age=18, *subjects, **details):
+    print("Name:", name)
+    print("Age:", age)
+    print("Subjects:", subjects)
+    print("Details:", details)
+
+student("Ravi", 20, "Math", "Science", city="Lucknow", grade="A")
+
+
+Lambda Functions (Anonymous Functions):
+---------------------------------------
+Small one-line functions using lambda keyword.
