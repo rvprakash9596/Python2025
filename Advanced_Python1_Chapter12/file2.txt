@@ -1,0 +1,1 @@
+Nice! You're using the with statement with multiple files — that's a clean and safe way to handle file operations in Python. Here's a complete and correct version of what you're trying to do:
