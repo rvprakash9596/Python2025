@@ -1,0 +1,13 @@
+first create the virtual environment in our project
+pip3 install SpeechRecognition pyaudio 
+pip install setuptools
+pip3 install pyttsx3
+
+pip install pocketsphinx
+
+pip install pyaudio
+
+
+
+
+
