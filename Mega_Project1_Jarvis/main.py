@@ -35,7 +35,6 @@ def speak(text):
 
     pygame.mixer.music.unload()
     os.remove("temp.mp3")
-
 #openAI API
 def aiProcess(command):
     client = OpenAI(api_key="GOOGLE API"
@@ -48,7 +47,6 @@ def aiProcess(command):
     ]
     )
     return completion.choices[0].message.content
-
 def processCommande(c):
     if "open google" in c.lower():
         webbrowser.open("http://google.com")
